@@ -1,1 +1,12 @@
 https://kubernetes.io/docs/tasks/network/customize-hosts-file-for-pods/
+
+In scenarios where hosts cant be resolved. Like customer.bitbucket.com. 
+
+- Adding entries to Pod /etc/hosts with HostAliases
+- Adding entries to a Pod's /etc/hosts file provides Pod-level override of hostname resolution when DNS and other options are not applicable. 
+- You can add these custom entries with the HostAliases field in PodSpec.
+- Modification not using HostAliases is not suggested because the file is managed by the kubelet and can be overwritten on during Pod creation/restart.
+- Default hosts file content Start an Nginx Pod which is assigned a Pod IP:
+
+
+
