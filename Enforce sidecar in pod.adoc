@@ -1,3 +1,13 @@
+Making injection explicit
+ -  By default, injection is implicit and applies to all pods created in the labeled namespace(s). However, you can alternately enable injection on only the pod(s) that explicitly require it.
+
+ - To make injection explicit for a given pod:
+
+ - Edit the sidecar-injector-webhook-configmap configmap and specify requiresExplicitInjection: true.
+
+ - To enable injection on a specific pod, annotate the pod with com.cloudbees.sidecar-injector/inject: yes.
+
+
 metadata:
   annotations:
      com.cloudbees.sidecar-injector/inject: yes
