@@ -1,0 +1,3 @@
+metadata:
+  annotations:
+     com.cloudbees.sidecar-injector/inject: yes
