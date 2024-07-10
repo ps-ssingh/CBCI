@@ -1,0 +1,6 @@
+I would like to migrate all of my Jenkins jobs (or my entire Jenkins configuration) from one instance to another.
+
+I would like to horizontally scale my current CloudBees CI configuration by moving jobs between controllers in order to distribute the workload.
+
+
+https://docs.cloudbees.com/docs/cloudbees-ci-kb/latest/client-and-managed-controllers/migrating-jenkins-instances
